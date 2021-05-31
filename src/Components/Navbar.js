@@ -53,7 +53,13 @@ const Nav = styled.nav`
   }
   div.nav-left-links {
     @media (max-width: 600px) {
-      display: none;
+      /* display: none; */
+      a {
+        font-size: 0.6em;
+      }
+      svg {
+        font-size: 1.6em;
+      }
     }
     ul {
       display: flex;

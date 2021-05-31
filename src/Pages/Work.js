@@ -95,7 +95,7 @@ const Work = ({ state, setActiveRoute }) => {
           return (
             <ProjectSection colored={false}>
               <div>
-                <div>
+                <div class="projsectleft">
                   <SectionTitleColored>{proj.typeapp}</SectionTitleColored>
                   <ProjectTitle>{proj.title}</ProjectTitle>
                   <ProjectDescription>{proj.description}</ProjectDescription>

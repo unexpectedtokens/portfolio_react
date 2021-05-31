@@ -24,8 +24,24 @@ export const ProjectSection = styled.section`
     padding: 0 ${(props) => props.theme.spacing.sidesSM};
   }
   @media (max-width: 850px) {
-    padding: 0 ${(props) => props.theme.spacing.sidesXS};
+    padding: 50px ${(props) => props.theme.spacing.sidesXS};
+    > div {
+      grid-template-columns: auto;
+      .projsectright {
+        justify-content: center;
+        figure {
+          width: 100%;
+          img {
+            margin-left: 0;
+          }
+        }
+      }
+      .projsectleft {
+        margin-bottom: 2em;
+      }
+    }
   }
+
   .projsectright {
     display: flex;
     justify-content: flex-end;
