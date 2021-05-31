@@ -9,10 +9,8 @@ import arpeg from "../assets/arpeggio.png";
 import portfolio from "../assets/portfolio.png";
 
 import {
-  BannerTitle,
   ProjectDescription,
   ProjectTitle,
-  SectionTitle,
   SectionTitleColored,
 } from "../Components/styled/Titles";
 import {

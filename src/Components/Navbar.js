@@ -4,7 +4,6 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import WorkOutlineIcon from "@material-ui/icons/WorkOutline";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
-import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
 const slideIn = keyframes`
     from{
         transform: translateY(-100%);
