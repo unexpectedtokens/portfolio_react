@@ -95,7 +95,7 @@ const Work = ({ state, setActiveRoute }) => {
       <ProjectsContainer>
         {WorkObj.map((proj, index) => {
           return (
-            <ProjectSection colored={(index + 1) % 2 === 0}>
+            <ProjectSection colored={false}>
               <div>
                 <div>
                   <SectionTitleColored>{proj.typeapp}</SectionTitleColored>
