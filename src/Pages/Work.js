@@ -7,6 +7,7 @@ import trondo from "../assets/trondo.png";
 import pitcher from "../assets/pitcher.png";
 import arpeg from "../assets/arpeggio.png";
 import portfolio from "../assets/portfolio.png";
+import lembas from "../assets/lembas.png";
 
 import {
   ProjectDescription,
@@ -21,6 +22,12 @@ import {
 } from "../Components/styled/Work/Project";
 
 const WorkObj = [
+  {
+    title: "Lembas",
+    typeapp: "Recipe/ Mealplanning app",
+    description:
+      "App to store recipes and generate mealplans based on daily calorie intake",
+  },
   {
     title: "Dtronics Tech Solutions",
     typeapp: "Business Website",
