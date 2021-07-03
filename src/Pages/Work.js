@@ -27,6 +27,8 @@ const WorkObj = [
     typeapp: "Recipe/ Mealplanning app",
     description:
       "App to store recipes and generate mealplans based on daily calorie intake",
+    tech: ["ReactJS", "Create React App", "Styled Components"],
+    image: lembas,
   },
   {
     title: "Dtronics Tech Solutions",
