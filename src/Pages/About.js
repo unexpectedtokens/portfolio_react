@@ -158,7 +158,7 @@ const About = ({ state, setActiveRoute }) => {
             </ul>
             <h4>Frameworks:</h4>
             <ul>
-              {["ExpressJS", "Django/Django-rest-framework", "ASP.NET"].map(
+              {["ExpressJS", "Django/Django-Rest-framework", "ASP.NET"].map(
                 (x) => (
                   <li key={x}>
                     <CodeOutlinedIcon />

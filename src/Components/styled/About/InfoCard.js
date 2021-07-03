@@ -49,7 +49,6 @@ export const CardContainer = styled.div`
   transform: translateY(-100px);
   @media (max-width: 1500px) {
     grid-template-columns: repeat(2, auto);
-
   }
   @media (min-width: 1500px) {
     align-content: start;
@@ -58,8 +57,7 @@ export const CardContainer = styled.div`
   }
   @media (max-width: 850px) {
     grid-template-columns: repeat(1, auto);
-
-1  }
+  }
 `;
 
 export const InforCardContainerColored = styled.section`
@@ -114,11 +112,12 @@ export const InfoCard = styled.div`
     display: flex;
     align-items: center;
     margin-bottom: 0.5em;
-    justify-content: center;
+    justify-content: space-between;
     span {
       color: ${(props) => props.theme.colors.blackLighter};
       font-weight: 100;
-      text-align: left;
+      width: 100%;
+      //text-align: left;
     }
     svg {
       margin-right: 0.5em;
