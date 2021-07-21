@@ -5,7 +5,7 @@ export const ProjectsContainer = styled.main`
 `;
 
 export const ProjectSection = styled.section`
-  padding: 0 ${(props) => props.theme.spacing.sidesLG};
+  padding: 50px ${(props) => props.theme.spacing.sidesLG};
   background-color: ${(props) =>
     props.colored
       ? props.theme.colors.blackLighter
@@ -16,6 +16,12 @@ export const ProjectSection = styled.section`
     grid-template-columns: 40% auto;
     align-items: center;
     align-content: center;
+  }
+  .websitelink {
+    color: ${(props) => props.theme.colors.mainLight};
+    text-decoration: none;
+    margin: 20px 0;
+    display: block;
   }
   @media (max-width: 1500px) {
     padding: 0 ${(props) => props.theme.spacing.sidesMD};

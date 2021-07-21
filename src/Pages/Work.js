@@ -8,7 +8,7 @@ import pitcher from "../assets/pitcher.png";
 import arpeg from "../assets/arpeggio.png";
 import portfolio from "../assets/portfolio.png";
 import lembas from "../assets/lembas.png";
-
+import gbc from "../assets/gbc.png";
 import {
   ProjectDescription,
   ProjectTitle,
@@ -23,26 +23,36 @@ import {
 
 const WorkObj = [
   {
+    title: "Green Building Control",
+    typeapp: "Company website",
+    description: "Website I made for a company",
+    tech: ["ReactJS", "GatsbyJS", "Styled-Components"],
+    link: "https://greenbuildingcontrol.nl",
+    image: gbc,
+  },
+  {
     title: "Lembas",
     typeapp: "Recipe/ Mealplanning app",
     description:
       "App to store recipes and generate mealplans based on daily calorie intake",
-    tech: ["ReactJS", "Create React App", "Styled Components"],
+    tech: [
+      "Golang",
+      "PostgreSQL",
+      "ReactJS",
+      "Create React App",
+      "Styled Components",
+    ],
     image: lembas,
+    link: "",
   },
   {
     title: "Dtronics Tech Solutions",
     typeapp: "Business Website",
     description:
       "The website I built for my freelance web development business.",
-    tech: [
-      "ReactJS",
-      "GatsbyJS",
-      "Styled-Components",
-      "Django-Rest-Framework",
-      "PostgreSQL",
-    ],
+    tech: ["ReactJS", "GatsbyJS", "Styled-Components"],
     image: dtronics,
+    link: "https://dtronics.dev",
   },
   {
     title: "Trondo",
@@ -51,6 +61,7 @@ const WorkObj = [
       "A web app which helps keeping track of stuff you have yet to do.",
     tech: ["VueJS", "ExpressJS", "MongoDB"],
     image: trondo,
+    link: "http://trondo.herokuapp.com/",
   },
   {
     title: "Pitcher",
@@ -59,6 +70,7 @@ const WorkObj = [
       "An app using google maps to display climbing and boulder gyms",
     tech: ["ReactJS", "Open Maps API", "Styled-Components"],
     image: pitcher,
+    link: "https://unexpectedtokens.github.io/pitcher/",
   },
   {
     title: "Arpeggio",
@@ -74,6 +86,7 @@ const WorkObj = [
       "Styled-Components",
     ],
     image: arpeg,
+    link: "",
   },
   {
     title: "This very website",
@@ -81,6 +94,7 @@ const WorkObj = [
     description: "A website to show off my skills and work",
     tech: ["ReactJS", "Styled-Components"],
     image: portfolio,
+    link: "",
   },
 ];
 
@@ -102,7 +116,7 @@ const Work = ({ state, setActiveRoute }) => {
       <ProjectsContainer>
         {WorkObj.map((proj, index) => {
           return (
-            <ProjectSection colored={false}>
+            <ProjectSection colored={false} key={index * 3.14}>
               <div>
                 <div class="projsectleft">
                   <SectionTitleColored>{proj.typeapp}</SectionTitleColored>
@@ -113,6 +127,11 @@ const Work = ({ state, setActiveRoute }) => {
                       <TechRepres>{tech}</TechRepres>
                     ))}
                   </TechRepresContainer>
+                  {proj.link !== "" ? (
+                    <a href={proj.link} className="websitelink">
+                      Go to website &rarr;
+                    </a>
+                  ) : null}
                 </div>
                 <div class="projsectright">
                   <figure>
