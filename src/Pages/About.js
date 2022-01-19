@@ -191,7 +191,7 @@ const About = ({ state, setActiveRoute }) => {
             <h2>Frontend Development</h2>
             <h4>(Programming) languages:</h4>
             <ul>
-              {["Javascript/Typescript", "HTML5", "CSS3/SASS"].map((x) => (
+              {["Javascript/Typescript", "HTML5", "CSS3/SASS", "Dart"].map((x) => (
                 <li key={x}>
                   <CodeOutlinedIcon />
                   <span>{x}</span>
@@ -206,6 +206,7 @@ const About = ({ state, setActiveRoute }) => {
                 "Styled-Components",
                 "React Native",
                 "Material-UI",
+                "Flutter",
               ].map((x) => (
                 <li key={x}>
                   <CodeOutlinedIcon />
@@ -215,7 +216,7 @@ const About = ({ state, setActiveRoute }) => {
             </ul>
             <h4>Want to learn:</h4>
             <ul>
-              {["NextJS", "Dart/Flutter", "Kotlin"].map((x) => (
+              {["NextJS", "Kotlin"].map((x) => (
                 <li key={x}>
                   <CodeOutlinedIcon />
                   <span>{x}</span>
