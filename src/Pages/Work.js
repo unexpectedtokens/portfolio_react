@@ -43,7 +43,7 @@ const WorkObj = [
       "Styled Components",
     ],
     image: lembas,
-    link: "",
+    link: "https://boiling-wave-80785.herokuapp.com/",
   },
   {
     title: "Dtronics Tech Solutions",
