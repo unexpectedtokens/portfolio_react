@@ -72,7 +72,7 @@ const About = ({ state, setActiveRoute }) => {
             </InfoContainer>
             <InfoContainer>
               <WorkOutlineOutlinedIcon />
-              <span>Ivengi</span>
+              <span>Software Developer at Ivengi</span>
             </InfoContainer>
           </InfoBar>
         </div>
@@ -100,7 +100,7 @@ const About = ({ state, setActiveRoute }) => {
             <h2>Work experience</h2>
             <ul>
               {[
-                "Ivengi: starting in september of 2022",
+                "Software Developer at Ivengi: starting in september of 2022",
                 "IT Internship at Kabisa Software Artisans - User research & Fullstack development: first half of 2022",
                 "Hobby projects - Making websites/apps for fun and educational purposes: 2018 - now",
                 "Self-employed at Dtronics Tech Solutions - Freelance web development: 2019 - 2021",
