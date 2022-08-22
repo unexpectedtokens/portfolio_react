@@ -100,6 +100,8 @@ const About = ({ state, setActiveRoute }) => {
             <h2>Work experience</h2>
             <ul>
               {[
+                "Ivengi: starting in september of 2022",
+                "IT Internship at Kabisa Software Artisans - User research & Fullstack development: first half of 2022",
                 "Hobby projects - Making websites/apps for fun and educational purposes: 2018 - now",
                 "Self-employed at Dtronics Tech Solutions - Freelance web development: 2019 - 2021",
               ].map((x) => (
@@ -164,6 +166,15 @@ const About = ({ state, setActiveRoute }) => {
                 )
               )}
             </ul>
+            <h4>Platforms:</h4>
+            <ul>
+              {["Heroku", "Firebase", "AWS Amplify"].map((x) => (
+                <li key={x}>
+                  <CodeOutlinedIcon />
+                  <span>{x}</span>
+                </li>
+              ))}
+            </ul>
             <h4>Databases:</h4>
             <ul>
               {["MySQL", "PostgreSQL", "SQL Server", "MongoDB"].map((x) => (
@@ -206,6 +217,7 @@ const About = ({ state, setActiveRoute }) => {
                 "React Native",
                 "Material-UI",
                 "Flutter",
+                "NextJS",
               ].map((x) => (
                 <li key={x}>
                   <CodeOutlinedIcon />
@@ -215,7 +227,7 @@ const About = ({ state, setActiveRoute }) => {
             </ul>
             <h4>Want to learn:</h4>
             <ul>
-              {["NextJS", "Kotlin"].map((x) => (
+              {["Kotlin"].map((x) => (
                 <li key={x}>
                   <CodeOutlinedIcon />
                   <span>{x}</span>
