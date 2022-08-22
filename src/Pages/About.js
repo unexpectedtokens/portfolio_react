@@ -51,12 +51,9 @@ const About = ({ state, setActiveRoute }) => {
     if (curMonth === birthMonth && curDay < birthDay) {
       age--;
     }
-    // if (isNaN(age)) {
-    //   return "24";
-    // }
     return age;
   };
-  console.log(getAge());
+
   return (
     <Container enter={enter}>
       <Banner enter={enter}>
@@ -75,7 +72,7 @@ const About = ({ state, setActiveRoute }) => {
             </InfoContainer>
             <InfoContainer>
               <WorkOutlineOutlinedIcon />
-              <span>Zuyd Hogeschool - ICT Academie</span>
+              <span>Ivengi</span>
             </InfoContainer>
           </InfoBar>
         </div>
@@ -89,7 +86,7 @@ const About = ({ state, setActiveRoute }) => {
               {[
                 "Self-educating software engineering: 2018 - now",
                 "MBO at Grafisch Lyceum Utrecht: 2019 - 2020",
-                "Associate's Degree ICT at Zuyd Hogeschool: 2020 - now",
+                "Associate's Degree ICT at Zuyd Hogeschool: 2020 - 2022",
               ].map((x) => (
                 <li key={x}>
                   <CheckCircleOutlineOutlinedIcon />
@@ -191,12 +188,14 @@ const About = ({ state, setActiveRoute }) => {
             <h2>Frontend Development</h2>
             <h4>(Programming) languages:</h4>
             <ul>
-              {["Javascript/Typescript", "HTML5", "CSS3/SASS", "Dart"].map((x) => (
-                <li key={x}>
-                  <CodeOutlinedIcon />
-                  <span>{x}</span>
-                </li>
-              ))}
+              {["Javascript/Typescript", "HTML5", "CSS3/SASS", "Dart"].map(
+                (x) => (
+                  <li key={x}>
+                    <CodeOutlinedIcon />
+                    <span>{x}</span>
+                  </li>
+                )
+              )}
             </ul>
             <h4>Frameworks/libraries:</h4>
             <ul>
