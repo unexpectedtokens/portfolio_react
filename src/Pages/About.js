@@ -100,7 +100,7 @@ const About = ({ state, setActiveRoute }) => {
             <h2>Work experience</h2>
             <ul>
               {[
-                "Software Developer at Ivengi: starting in september of 2022",
+                "Software Developer at Ivengi: since september of 2022",
                 "IT Internship at Kabisa Software Artisans - User research & Fullstack development: first half of 2022",
                 "Hobby projects - Making websites/apps for fun and educational purposes: 2018 - now",
                 "Self-employed at Dtronics Tech Solutions - Freelance web development: 2019 - 2021",
@@ -148,7 +148,7 @@ const About = ({ state, setActiveRoute }) => {
             <h2>Backend Development</h2>
             <h4>Programming languages:</h4>
             <ul>
-              {["Golang", "NodeJS/Javascript", "Python", ".NET/C#"].map((x) => (
+              {["Golang", "Typescript", "Python", ".NET/C#"].map((x) => (
                 <li key={x}>
                   <CodeOutlinedIcon />
                   <span>{x}</span>
@@ -186,7 +186,7 @@ const About = ({ state, setActiveRoute }) => {
             </ul>
             <h4>Want to learn:</h4>
             <ul>
-              {["GraphQL", "OAuth2"].map((x) => (
+              {["GraphQL", "OAuth2", "Rust", "Elixir/Phoenix"].map((x) => (
                 <li key={x}>
                   <CodeOutlinedIcon />
                   <span>{x}</span>
@@ -199,7 +199,7 @@ const About = ({ state, setActiveRoute }) => {
             <h2>Frontend Development</h2>
             <h4>(Programming) languages:</h4>
             <ul>
-              {["Javascript/Typescript", "HTML5", "CSS3/SASS", "Dart"].map(
+              {["Typescript", "HTML5", "CSS3/SASS", "Dart"].map(
                 (x) => (
                   <li key={x}>
                     <CodeOutlinedIcon />
